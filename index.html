@@ -17,19 +17,21 @@
         <h1>Autohelps</h1>
       </div>
     </div>
-    <div class="row">
-	  <div class="large-12 columns">
-
-	    <div class="hide-for-small">
-	      <div id="featured"><img alt="slide image" src="img/car-x400.jpg"></div>
-	    </div>
-
-	    <div class="row">
-	      <div class="small-12 show-for-small"><br>
-	      <img src="img/car-x600.jpg"></div>
-	    </div>
-	  </div>
-	</div>
+    <div class="row" style="width: 970px;">
+        <div class="large-12 hide-for-small">
+         <ul class="example-orbit" data-orbit>
+          <li>
+            <img src="img/car-1-x400.jpg" alt="slide 1" />
+          </li>
+          <li>
+            <img src="img/car-2-x400.jpg" alt="slide 2" />
+          </li>
+          <li>
+            <img src="img/car-3-x400.jpg" alt="slide 3" />
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="row">
       <div class="large-12 columns">
       	<div class="panel radius">
@@ -47,7 +49,7 @@
         <li class="price">2500 руб.</li>
         <li class="description"><img src="img/base.png"></li>
         <li class="description">
-        Включает  размещение на 30ти самых посещаемых сайтов, связанных с продажей автомобилей: (E1.ru/Avito.ru/etc) <br><br><br> </li>
+        Включает  размещение на 30ти самых посещаемых сайтов, связанных с продажей автомобилей.<br><br><br><br> </li>
         <li class="cta-button"><a class="button" href="#form">Заказать</a></li>
       </ul>
     </div>
@@ -145,15 +147,27 @@
 
     <div class="row">
       <div class="large-6 columns">
-        <p>© Autohelps.ru</p>
+        <p>© Autohelps.ru Екатеринбург 2013-2014</p>
       </div>
     </div>
   </div>
 </footer>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.orbit.js"></script>
     <script>
-      $(document).foundation();
+      $(document).foundation({
+        orbit: {
+          animation: 'slide',
+          timer_speed: 3000,
+          pause_on_hover: false,
+          animation_speed: 500,
+          navigation_arrows: false,
+          slide_number: false,
+          bullets: false
+        }
+      });
     </script>
   </body>
 </html>
+
